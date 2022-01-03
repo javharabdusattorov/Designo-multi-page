@@ -6,87 +6,49 @@
     text-decoration: none !important;
 }
 
-header .header_menu {
-    background: url(../img/header_fon\ .png) no-repeat center center /cover;
-    height: 50vh;
+header .header_design {
+    background: url(../img/Group\ 6.png) no-repeat center center /cover;
+    padding-top: 60px;
+    padding-bottom: 55px;
 }
 
-.header_menu .header-navbar-brand {
-    font-size: 24px;
+.header_design h1 {
+    font-size: 48px;
     color: #FFFFFF;
-    line-height: 27px;
-    letter-spacing: 5px;
-}
-
-.header_menu .header-nav-link {
-    font-size: 15px;
-    color: #FFFFFF;
-    font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-} 
-
-.header_colors {
-    margin-top: 60px;
-}
-
-.header_colors .colors {
-    font-size: 40px;
-    color: #1D1C1E;
     font-weight: 500;
     line-height: 48px;
-    letter-spacing: 2px;
-    margin-bottom: 40px;
-    text-transform: uppercase;
+    margin-bottom: 24px;
 }
 
-.header_colors .primary {
-    font-size: 16px;
-    color: #E7816B;
-    line-height: 14px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    /* margin-bottom: 36px; */
+.header_design p {
+    font-size: 17px;
+    color: #FFFFFF;
+    line-height: 26px;
 }
 
-.header_colors .primray_container {
-    display: flex;
-}
-
-/* .primray_container img {
+.section_paper img {
     max-width: 100%;
-    width: 55px;
-} */
-
-.primray_container .box {
-    margin-left: 24px;
+    width: 100%;
 }
 
-.header_colors .primray_container .box {
-    font-size: 13px;
-    color: #1D1C1E;
-    line-height: 23px;
-    text-transform: uppercase;
+section .section_paper .box {
+    background: #FDF3F0;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    padding: 25px 32px 15px 32px;
 }
 
-.primray_container .box p {
-    font-size: 14.5px;
+.section_paper .box h5 {
+    font-size: 20px;
+    color: #E7816B;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 5px;
+}
+
+.section_paper .box p {
+    font-size: 16px;
     color: #333136;
-    line-height: 23px;
-    opacity: 0.75;
-}
-
-.primray_container .box .pharagraph {
-    margin-top: -13px;
-}
-
-/* **************************************************8 */
-
-/* Media-start */
-
-@media (max-width:576px) {
-    .header_colors .primray_container {
-        justify-content: center;
-    }
+    line-height: 26px;
+    margin-top: 10px;
 }
