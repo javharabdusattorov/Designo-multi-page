@@ -6,10 +6,40 @@
     text-decoration: none !important;
 }
 
-header .header_design {
+/* All-nav-start */
+
+.header_menu {
+    padding: 40px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.header_menu .header-navbar-brand {
+    font-size: 26px;
+    color: #333136;
+    letter-spacing: 8px;
+    line-height: 5px;
+    text-transform: uppercase;
+}
+
+.header_menu .header-nav-link {
+    font-size: 14px;
+    color: #333136;
+    line-height: 14px;
+    letter-spacing: 2px;
+    margin-right: 30px;
+}
+
+/* All-nav-end */
+
+/* ***************************************************** */
+
+ .header_design {
     background: url(../img/Group\ 6.png) no-repeat center center /cover;
-    padding-top: 60px;
-    padding-bottom: 55px;
+    padding-top:  55px;
+    padding-bottom: 60px;
+    margin-top: 140px;
 }
 
 .header_design h1 {
@@ -51,4 +81,52 @@ section .section_paper .box {
     color: #333136;
     line-height: 26px;
     margin-top: 10px;
+}
+
+.section_card {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.section_card .app_design {
+    background: url(../img/Object.png) no-repeat center center /cover;
+    padding: 100px 0;
+    border-radius: 12px;
+}
+
+.section_card .graphic_design {
+    background: url(../img/Object1.png) no-repeat center center /cover ;
+    padding: 100px 0;
+    border-radius: 12px;
+}
+
+.section_card .app_design h3, .graphic_design h3 {
+    font-size: 35px;
+    color: #FFFFFF;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 2px;
+}
+
+.section_card .app_design p, .graphic_design p {
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+/* 88888888888888888888888888888888888888888 */
+
+/* Media-start */
+
+@media (max-width:991px) {
+    header .navbar-collapse {
+        background: #fff;
+        padding: 20px;
+        border-radius: 15px ;
+        margin-top: 15px;
+    }
 }
