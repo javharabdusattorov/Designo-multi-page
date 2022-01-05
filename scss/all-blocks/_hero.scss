@@ -1,0 +1,59 @@
+// Hero stillar
+.hero  {
+    &__text {
+        padding: 145px 0 145px 95px;
+        background-image: url('../images/hero-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        border-radius: 15px;
+    }
+
+    &__heading {
+        max-width: 540px;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 48px;
+        color: #FFFFFF;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    &__paragraph {
+        max-width: 445px;
+        padding: 0;
+        margin-bottom: 40px;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        &__text {
+            padding: 60px 0 455px 0;
+            text-align: center;
+            background-image: url('../images/hero-tablet.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+        }
+
+        &__heading {
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        &__paragraph {
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+}

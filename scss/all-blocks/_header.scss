@@ -1,0 +1,117 @@
+// Header stillar
+.header {
+    padding: 67px 0 64px;
+
+    &--container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        display: inline-block;
+    }
+
+    &__nav {
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        flex-shrink: 0;
+    }
+
+    &__item + &__item {
+         margin-left: 42px;
+    }
+
+    &__link {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        color: #333136;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+    }
+
+    &__hamburger {
+        display: none;
+        border: none;
+        font-size: 22px;
+        background-color: white;
+        padding: 0;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+
+        &__link {
+            flex-shrink: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .header {
+        &__nav {
+            display: none;
+        }
+        &__hamburger {
+            display: block;
+        }
+
+        &--open {
+            position: relative;
+        }
+
+        &--open &__nav {
+            display: block;
+            position: absolute;
+            top: 100px;
+            background-image: linear-gradient(to bottom, black);
+            left: 0;
+            right: 0;
+            padding: 60px 0 60px 24px;
+        }
+
+        &--open &__list {
+            flex-direction: column;
+            margin-bottom: -32px;
+        }
+
+        &--open &__item + &__item {
+            margin-left: 0;
+        }
+
+        &--open &__item {
+            margin-bottom: 32px;
+            color: #fff;
+        }
+
+        &--open &__link {
+            color: white;
+            font-size: 24px;
+        }
+
+        &--open &__hamburger {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,103 @@
+.design {
+    padding: 160px 0 80px;
+    &--container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-left {
+        background-image: url('../images/design-right.png');
+        background-size: cover;
+        padding: 273px 120px;
+        text-decoration: none;
+        border-radius: 15px;
+    }
+
+    &-left__text {
+        // width: 300px;
+        text-align: center;
+    }
+
+    &-heading {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 0;
+        margin-bottom: 24px;
+    }
+
+    &-link {
+        color: white;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &-link:hover {
+            box-shadow: 640px 0 inset rgba(240, 111, 82, 0.6);
+    }
+
+    &-right {
+        margin-left: auto;
+        margin-left: 20px;
+    }
+
+    &-app {
+        background-image: url('../images/app.png');
+        background-size: cover;
+        padding: 107px 90px;
+        text-decoration: none;
+        display: block;
+        margin-left: auto;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    &-graphic {
+        background-image: url('../../images/graphic.png');
+        background-size: cover;
+    }
+
+    &--app {
+        margin-bottom: 40px;
+    }
+
+    &__link:hover {
+        box-shadow: 640px 0 inset rgba(240, 111, 82, 0.6);
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .design {
+        &--container {
+            flex-direction: column;
+        }
+
+        &-left {
+            padding: 53px 0;
+            margin-bottom: 24px;
+        }
+
+        &-app {
+            padding: 53px 0;
+        }
+
+        &--app {
+            margin-bottom: 24px;
+        }
+
+        &-right {
+            margin-left: 0;
+        }
+    }
+}

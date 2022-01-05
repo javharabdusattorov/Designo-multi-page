@@ -1,0 +1,16 @@
+.about {
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        background-image: url('../../images/abouthero-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        border-radius: 15px;
+    }
+
+    &__us {
+        align-self: center;
+        padding-left: 95px;
+    }
+}
