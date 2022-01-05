@@ -6,6 +6,11 @@
     text-decoration: none !important;
 }
 
+.col-none {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 /* All-nav-start */
 
 .header_menu {
@@ -40,6 +45,7 @@
     padding-top:  55px;
     padding-bottom: 60px;
     margin-top: 120px;
+    border-radius: 10px
 }
 
 .header_design h1 {
@@ -130,19 +136,19 @@ section .section_paper .box {
 
 .section_card .app_design {
     background: url(../img/Object.png) no-repeat center center /cover;
-    padding: 100px 0;
+    padding: 110px 0;
     border-radius: 8px;
 }
 
 .section_card .graphic_design {
     background: url(../img/Object1.png) no-repeat center center /cover ;
-    padding: 100px 0;
+    padding: 110px 0;
     border-radius: 8px;
 }
 
 .section_card .web_design {
     background: url(../img/Object2.png) no-repeat center center /cover;
-    padding: 100px 0;
+    padding: 110px 0;
     border-radius: 8px;
 }
 
@@ -164,7 +170,83 @@ section .section_paper .box {
     margin-top: 20px;
 }
 
-/* 88888888888888888888888888888888888888888 */
+/* About-page-start */
+
+/* header-start */
+
+.header_about_us {
+    margin-top: 130px;
+}
+
+.header_about_us .about_us_text {
+    background: url(../img/Group\ 6.png) no-repeat center center/cover;
+    padding: 205px 97px 135px 95px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.about_us_text h1 {
+    font-size: 48px;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.about_us_text p {
+    font-size: 17px;
+    color: #fff;
+    line-height: 26px;
+}
+
+.header_about_us img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px
+}
+
+/* header-end */
+
+/* ********************************************** */
+
+/* section-start */
+
+.talent {
+    margin-top: 87px;
+}
+
+.talent img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.talent_text {
+    background:url(../img/Group\ 6\ -1.png) no-repeat center center /cover;
+    padding: 170px 90px;
+}
+
+.talent .talent_text h2 {
+    font-size: 40px;
+    color: #E7816B;
+    font-weight: 500;
+    margin-bottom: 26px;
+}
+
+.talent .talent_text p {
+    font-size: 16px;
+    color: #333136;
+}
+
+.talent_text .our_team {
+    margin-top: 20px;
+}
+
+/* About-page-end */
+
+/* ******************************************** */
 
 /* Media-start */
 
@@ -174,5 +256,11 @@ section .section_paper .box {
         padding: 20px;
         border-radius: 15px ;
         margin-top: 15px;
+    }
+}
+
+@media (max-width:676px) {
+    .header_about_us .about_us_text {
+        padding: 110px 44px 85px 74px;
     }
 }
